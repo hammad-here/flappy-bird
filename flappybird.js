@@ -7,11 +7,11 @@ function createObstacle() {
     upperHeight = 20 + Math.random() * 45;
     lowerHeight = 100 - upperHeight - 35;
     let upper = document.createElement("img")
-    upper.setAttribute("src", "asset/flappyBirdPipe.jpeg");
+    upper.setAttribute("src", "flappyBirdPipe.jpeg");
     upper.setAttribute("class", "obs");
     upper.style.height = upperHeight + "vh";
     let lower = document.createElement("img")
-    lower.setAttribute("src", "asset/flappyBirdPipe - down.jpeg");
+    lower.setAttribute("src", "flappyBirdPipe - down.jpeg");
     lower.setAttribute("class", "obs");
     lower.style.height = lowerHeight + "vh";
     lower.style.top = upperHeight + 35 + "vh";
