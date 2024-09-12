@@ -58,3 +58,18 @@ window.addEventListener("keydown", e => {
         g = -innerHeight / 600
     }
 })
+
+window.addEventListener("click", () => { 
+        g = -innerHeight / 600
+})
+
+
+let isAlerted = false
+setInterval(()=>{
+    if(screen.width<screen.height&&!isAlerted){
+        isAlerted=true
+        alert("please rotate your device for better experience")
+    }
+},200)
+
+
